@@ -13,18 +13,41 @@
     <div id="main">Main
         <div id="calculator">Calculator
             <div id="displayContainer" class="LCD">displayContainer
-                <div id="l2f">Last 2 Functions</div>
-                <div id="display">Display</div>
+                <div id="accum">Accumulator</div>
+                <div id="display"></div>
             </div>
-            <button id="add" class="operator">add</button>
-            <button id="subtract" class="operator">subtract</button>
-            <button id="multiply" class="operator">multiply</button>
-            <button id="divide" class="operator">divide</button>
-            <button id="equals" class="operator">equals</button>
-            <button id="clear" class="operator">clear</button>
-            
-
-
+            <table class ="interface">
+                <tr>
+                    <td><button id="leftParenthesis" class="operator">(</button></td>
+                    <td><button id="rightParenthesis" class="operator">)</button></td>
+                    <td><button id="percentSign" class="operator">%</button></td>
+                    <td><button id="clearEntry" class="operator">CE</button></td>
+                </tr>
+                <tr>
+                    <td><button id="seven" class="numb">7</button></td>
+                    <td><button id="eight" class="numb">8</button></td>
+                    <td><button id="nine" class="numb">9</button></td>
+                    <td><button id="divideSign" class="operator">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button id="four" class="numb">4</button></td>
+                    <td><button id="five" class="numb">5</button></td>
+                    <td><button id="six" class="numb">6</button></td>
+                    <td><button id="multiplySign" class="operator">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="one" class="numb">1</button></td>
+                    <td><button id="two" class="numb">2</button></td>
+                    <td><button id="three" class="numb">3</button></td>
+                    <td><button id="minusSign" class="operator">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="zero" class="numb">0</button></td>
+                    <td><button id="decimalPoint" class="numb">.</button></td>
+                    <td><button id="equals" class="equals">=</button></td>
+                    <td><button id="plusSign" class="operator">+</button></td>
+                </tr>
+            </table>
         </div>
     </div>
     <div id="footer">Footer</div> 

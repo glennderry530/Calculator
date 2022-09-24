@@ -1,5 +1,10 @@
-body {
+/* *{border: 1px solid #000000;} /*for troubleshooting*/ 
 
+body {
+ font-size: large;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
 }
 
 #header {
@@ -7,14 +12,62 @@ body {
 }
 
 #main {
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-
 
 #calculator {
-
+    display: flex;
+    width: 350px;
+    flex-direction: column;
 }
 
-#footer {
 
+button {
+    font-size: x-large;
+}
+
+.LCD {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: flex-end;
+}
+
+#display {
+    display: flex;
+   
+    font-size: 48px;
+}
+
+.interface {
+    gap: 10px;
+}
+
+.numb {
+    height: 40px;
+    width: 80px;
+    border-radius: 12%;
+}
+
+.operator {
+    height: 40px;
+    width: 80px;
+    border-radius: 12%;
+    background-color: rgb(180, 180, 180);
+}
+
+.equals {
+    height: 40px;
+    width: 80px;
+    color: rgb(240, 240, 253);
+    background-color: rgba(0, 102, 255, 0.5);
+    border-radius: 12%;
+}
+
+
+
+#footer {
+    justify-self: flex-end;
 }
