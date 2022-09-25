@@ -39,7 +39,7 @@ function operate (operator, num1, num2) {
 }
 
 function toDisplay (input) {
-    if (displayValue.includes('.') & input =="."){
+    if (displayValue.includes('.') & input =="."){ //only 1 decimal point allowed
         return;
     };
     if  (displayValue === "0" & input == "") {
@@ -87,17 +87,24 @@ minusSign.onclick = () => {operatorClick("-");};
 multiplySign.onclick = () => {operatorClick("x");};
 divideSign.onclick = () => {operatorClick("÷");};
 
+equals.onclick = () => equals();
+
 function operatorClick (operatorClicked) {
     let displayNum = getDisplayValue();
-    if (accum === 0) {
+    if (accum == 0) {
         accum = displayNum;
         accumDisplay.innerText = (accum + " " + operatorClicked)
      } else if (accum != 0) {
         accum = operate(operatorClicked, accum, displayNum)
-        accumDisplay.innerText = (accum + " " + operatorClicked)
+        accumDisplay.innerText = (accum + " " + operatorClicked + " " + displayNum)
      } 
      displayValue = "0";
      display.innerText = (accum);
+}
+
+//****
+function equals () {
+    return
 }
 
 // for any operator
